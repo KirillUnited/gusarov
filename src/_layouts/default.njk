@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>{{ title }}</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/styles/app.css"/>
+    </head>
+    <body class="{{ body_class }}">
+        <div class="wrapper">
+            {% block header %}
+                {% include "../_components/header.njk" %}
+            {% endblock %}
+            <main class="content">
+                {{ content | safe }}
+            </main>
+            {% block footer %}
+                {% include "../_components/footer.njk" %}
+            {% endblock %}
+        </div>
+        <script src="/assets/js/app.js"></script>
+    </body>
+</html>

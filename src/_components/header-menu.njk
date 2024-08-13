@@ -1,0 +1,11 @@
+{% macro headerMenu(list, className) %}
+    <nav class="header-nav">
+        <ul class="header-nav-list {{ className }}">
+            {% for item in list %}
+                <li>
+                    <a href="#">{{ item }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+{% endmacro %}

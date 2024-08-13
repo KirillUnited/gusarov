@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --primary: 42 100% 68%;
+        --primary-foreground: 0 6% 21%;
+        --background: 0 0% 100%;
+        --foreground: 0 6% 21%;
+        --font-primary: 'TTFirs';
+        --font-foreground: 'Century Gothic';
+    }
+    body {
+        @apply text-foreground bg-background font-foreground;
+    }
+}
+@layer components {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100dvh;
+    }
+
+    .content {
+        flex: 1 0 auto;
+    }
+}

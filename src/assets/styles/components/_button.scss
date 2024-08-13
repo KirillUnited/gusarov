@@ -1,0 +1,8 @@
+.button {
+    @apply inline-flex items-center justify-center;
+    @apply text-sm;
+    @apply text-primary-foreground bg-primary hover:bg-primary/90;
+    @apply transition-colors;
+    height: 3.15em;
+    padding-inline: 2.15em;
+}

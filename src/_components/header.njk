@@ -1,0 +1,43 @@
+{% import "./header-menu.njk" as headerMenu %}
+{% import "./button.njk" as Button %}
+<header id="header" class="header text-background">
+    <div class="container">
+        <div class="flex items-center justify-between py-4">
+            <div class="flex flex-wrap gap-x-5 items-center">
+                {% include "./logo.html" %}
+                <span class="hidden xl:inline-block w-12 h-[2px] bg-background"></span>
+                <div class="hidden xl:block">{{ headerMenu.headerMenu(['Услуги', 'Кейсы', 'Блог', 'Курсы', 'Контакты']) }}</div>
+            </div>
+            <div class="flex flex-wrap gap-x-5 items-center">
+                <div class="hidden md:block">{{ Button.Button('Стать клиентом') }}</div>
+                <a
+                    href="tel:+375291115558"
+                    class="hidden xl:flex font-bold"
+                    aria-label="+375 (29) 111 - 55 - 58"
+                    title="+375 (29) 111 - 55 - 58">
+                    +375 (29) 111 - 55 - 58
+                </a>
+                <div class="hidden sm:block">
+                    {% include "./social.njk" %}
+                </div>
+                <button type="button" class="header-menu-button">
+                    <svg
+                        class="header-menu-icon"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 35 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M30.625 25.6562V27.8438H4.375V25.6562H30.625ZM30.625 16.9062V19.0938H4.375V16.9062H30.625ZM30.625
+                                8.15625V10.3438H4.375V8.15625H30.625Z"
+                            fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="hidden xl:flex justify-center pb-5">
+            {{ headerMenu.headerMenu(['Продвижение сайтов', 'Контекстная реклама', 'Создание сайтов'], 'header-nav-list-secondery') }}
+        </div>
+    </div>
+</header>

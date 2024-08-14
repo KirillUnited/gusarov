@@ -682,16 +682,8 @@ body {
   display: block;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 .flex {
   display: flex;
-}
-
-.grid {
-  display: grid;
 }
 
 .hidden {
@@ -702,24 +694,12 @@ body {
   height: 2px;
 }
 
-.h-7 {
-  height: 1.75rem;
-}
-
 .w-12 {
   width: 3rem;
 }
 
-.w-7 {
-  width: 1.75rem;
-}
-
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.place-items-center {
-  place-items: center;
 }
 
 .items-center {
@@ -737,11 +717,6 @@ body {
 .gap-x-5 {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
-}
-
-.gap-x-14 {
-  -moz-column-gap: 3.5rem;
-       column-gap: 3.5rem;
 }
 
 .bg-background {
@@ -774,10 +749,6 @@ body {
 @media (min-width: 768px) {
   .md\:block {
     display: block;
-  }
-
-  .md\:flex {
-    display: flex;
   }
 }
 

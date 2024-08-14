@@ -27,7 +27,8 @@
     }
     &-menu-button {
         --size: #{getMinMax(25px, 35px)};
-        @apply grid place-items-center;
+        display: grid;
+        place-items: center;
         width: var(--size);
         height: var(--size);
     }

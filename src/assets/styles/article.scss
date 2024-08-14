@@ -1,0 +1,20 @@
+.article h1,
+.article h2,
+.article h3,
+.article h4 {
+    @apply font-semibold text-primary;
+    margin-top: getMinMax(30px, 50px);
+    margin-bottom: getMinMax(16px, 20px)
+}
+.article {
+    @apply text-text;
+    font-size: getMinMax(14px, 16px);
+
+    &-description {
+        @apply text-foreground;
+        font-size: getMinMax(14px, 20px);
+    }
+    h2 {
+        font-size: getMinMax(24px, 32px);
+    }
+}

@@ -1,0 +1,6 @@
+.hero {
+    &-inner {
+        padding-top: getMinMax(110px, 164px);
+        padding-bottom: getMinMax(48px, 48px);
+    }
+}

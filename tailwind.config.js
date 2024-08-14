@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '24px'
+      padding: '20px'
     },
     fontFamily: {
       primary: ['var(--font-primary)', ...fontFamily.sans],
@@ -18,7 +18,8 @@ module.exports = {
           foreground: 'hsl(var(--primary-foreground))'
         },
         background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))'
+        foreground: 'hsl(var(--foreground))',
+        text: 'var(--text)'
       },
     },
   },

@@ -458,8 +458,9 @@ video {
   --primary-foreground: 0 6% 21%;
   --background: 0 0% 100%;
   --foreground: 0 6% 21%;
-  --font-primary: 'TTFirs';
-  --font-foreground: 'Century Gothic';
+  --font-primary: "TTFirs";
+  --font-foreground: "Century Gothic";
+  --text: #646469;
 }
 
 body {
@@ -634,8 +635,8 @@ body {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width: 640px) {
@@ -676,6 +677,24 @@ body {
 
 .content {
   flex: 1 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .container-sm {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-sm {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container-sm {
+    max-width: 1280px;
+  }
 }
 
 .block {

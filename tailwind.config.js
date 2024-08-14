@@ -28,7 +28,7 @@ module.exports = {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         text: 'var(--text)'
-      },
+      }
     },
   },
   plugins: [],

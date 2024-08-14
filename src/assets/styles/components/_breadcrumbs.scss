@@ -1,0 +1,16 @@
+.breadcrumbs {
+    @apply flex items-center flex-wrap;
+    margin-bottom: getMinMax(28px, 48px);
+    &__item {
+        @apply flex items-center gap-1 text-sm;
+        &:not(:first-child) {
+            @apply ml-1;
+            &::before {
+                content: "/";
+            }
+        }
+        &--current {
+            @apply text-primary font-bold;
+        }
+    }
+}

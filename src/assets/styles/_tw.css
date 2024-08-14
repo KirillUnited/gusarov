@@ -29,4 +29,9 @@
     .container-sm {
         @apply lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-[1320px];
     }
+    .post-content-grid {
+        display: grid;
+        grid-template-columns: 1fr 420px;
+        grid-template-rows: repeat(2, auto);
+    }
 }

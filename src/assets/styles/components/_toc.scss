@@ -1,0 +1,23 @@
+.toc {
+    --border-color: #ccc;
+    @apply lg:p-7;
+    border-left: 1px solid var(--border-color);
+    &-title {
+        @apply font-semibold;
+        font-size: getMinMax(16px, 18px);
+        margin-bottom: getMinMax(16px, 20px);
+    }
+    &-list {
+        @apply space-y-2;
+        &-item {
+            border-left: 5px solid var(--border-color);
+            padding: getrem(4px) getrem(4px) getrem(4px) getrem(16px);
+        }
+    }
+    &-link {
+        font-size: getMinMax(14px, 16px);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -5,7 +5,15 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '24px'
+      padding: '20px',
+      // screens: {
+      //   'sm': '540px',
+      //   'md': '720px',
+      //   'lg': '960px',
+      //   'xl': '1140px',
+      //   '2xl': '1320px',
+      //   '3xl': '1440px',
+      // }
     },
     fontFamily: {
       primary: ['var(--font-primary)', ...fontFamily.sans],
@@ -18,8 +26,9 @@ module.exports = {
           foreground: 'hsl(var(--primary-foreground))'
         },
         background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))'
-      },
+        foreground: 'hsl(var(--foreground))',
+        text: 'var(--text)'
+      }
     },
   },
   plugins: [],

@@ -1,0 +1,14 @@
+.social-share {
+    @apply absolute z-50 top-full -translate-x-1/2 md:translate-x-0;
+    width: fit-content;
+    padding: getMinMax(15px, 20px);
+    & > ul {
+        @apply flex md:flex-col gap-y-3 gap-x-4;
+        & > li > a {
+            @apply flex items-center gap-x-2 truncate;
+        }
+    }
+    .label {
+        @apply hidden md:inline;
+    }
+}

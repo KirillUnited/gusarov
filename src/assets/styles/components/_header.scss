@@ -1,6 +1,5 @@
 .header {
     @apply fixed top-0 left-0 right-0 z-10;
-    @apply bg-foreground;
     &-nav {
         &-list {
             @apply flex items-center flex-wrap;
@@ -27,7 +26,8 @@
     }
     &-menu-button {
         --size: #{getMinMax(25px, 35px)};
-        @apply grid place-items-center;
+        display: grid;
+        place-items: center;
         width: var(--size);
         height: var(--size);
     }

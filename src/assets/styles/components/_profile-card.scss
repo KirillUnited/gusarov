@@ -1,0 +1,18 @@
+.profile-card {
+    max-width: getrem(450px);
+    display: grid;
+    grid-template-columns: getMinMax(80px, 100px) 1fr;
+    gap: getrem(20px);
+    &__content {
+        @apply space-y-2;
+        align-self: center;
+    }
+    &__title {
+        @apply font-primary font-extrabold;
+        font-size: getMinMax(16px, 18px);
+    }
+    &__subtitle {
+        @apply font-primary font-normal;
+        font-size: getMinMax(14px, 14px);
+    }
+}

@@ -1,0 +1,15 @@
+.tag {
+    --font-size: 14;
+    @apply text-primary-foreground bg-primary;
+    font-size: calc(var(--font-size) * 1px);
+    border-radius: calc(40 / var(--font-size) * 1em);
+    padding: calc(6 / var(--font-size) * 1em) calc(20 / var(--font-size) * 1em);
+    &-text {
+        line-height: calc(16 / var(--font-size) * 1em);
+    }
+}
+@media screen and (max-width: 640px) {
+    .tag {
+        --font-size: 12;
+    }
+}

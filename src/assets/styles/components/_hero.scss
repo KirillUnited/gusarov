@@ -1,0 +1,18 @@
+.hero {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-inner {
+        padding-top: getMinMax(110px, 164px);
+        padding-bottom: getMinMax(48px, 48px);
+    }
+    &-title {
+        @apply font-primary font-black;
+        font-size: getMinMax(28px, 56px);
+        line-height: calc(64px / 56px) * 1em;
+        letter-spacing: -0.0125em;
+    }
+    .dates {
+        font-size: getMinMax(14px, 16px);
+    }
+}

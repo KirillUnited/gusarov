@@ -8,8 +8,9 @@
         --primary-foreground: 0 6% 21%;
         --background: 0 0% 100%;
         --foreground: 0 6% 21%;
-        --font-primary: 'TTFirs';
-        --font-foreground: 'Century Gothic';
+        --font-primary: "TTFirs";
+        --font-foreground: "Century Gothic";
+        --text: #646469;
     }
     body {
         @apply text-foreground bg-background font-foreground;
@@ -24,5 +25,13 @@
 
     .content {
         flex: 1 0 auto;
+    }
+    .container-sm {
+        @apply lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-[1320px];
+    }
+    .post-content-grid {
+        @apply gap-x-7;
+        grid-template-columns: 1fr 420px;
+        grid-template-rows: repeat(2, auto);
     }
 }

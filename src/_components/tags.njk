@@ -1,0 +1,8 @@
+{% set list = ['сеть','инструменты','ликбез','интернет'] %}
+<div class="tags">
+    <ul class="flex flex-wrap gap-2">
+        {% for item in list %}
+            <li class="tag"><span class="tag-text">{{ item }}</span></li>
+        {% endfor %}
+    </ul>
+</div>

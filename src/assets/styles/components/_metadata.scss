@@ -1,0 +1,16 @@
+.metadata {
+    &>ul {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: getMinMax(14px, 16px);
+        gap: getMinMax(15px, 50px) getMinMax(15px, 15px);
+        &>li {
+            display: flex;
+            align-items: center;
+            gap: getMinMax(5px, 10px);
+            svg {
+                width: min(30px, getvw(30px));
+            }
+        }
+    }
+}

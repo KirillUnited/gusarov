@@ -27,6 +27,6 @@
         flex: 1 0 auto;
     }
     .container-sm {
-        @apply lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl;
+        @apply lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-[1320px];
     }
 }

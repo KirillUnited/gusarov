@@ -1,6 +1,5 @@
 .header {
     @apply fixed top-0 left-0 right-0 z-10;
-    @apply bg-foreground;
     &-nav {
         &-list {
             @apply flex items-center flex-wrap;

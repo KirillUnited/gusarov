@@ -1,11 +1,21 @@
-<section class="hero">
+<section
+    class="hero text-background"
+    style="background: url('https://gusarov-group.by/seo/wp-content/themes/Gusarov/assets/images/postBg.webp');">
     <div class="container container-sm">
         <div class="hero-inner">
-            <div class="container-sm">
-                <h1>Ошибка 401 Unauthorized: что это за ошибка, диагностика и как ее исправить</h1>
+            <div class="flex flex-col gap-7 md:gap-10">
+                <h1 class="hero-title">Ошибка 401 Unauthorized: что это за ошибка, диагностика и как ее исправить</h1>
                 {% include "./html/profile-card.html" %}
-                <div class="dates">
-                    <span>Опубликовано: 24 июля 2023</span> <span>Обновлено: 25 апреля 2024</span>
+                <div class="flex flex-col gap-3 md:gap-5">
+                    <div class="dates flex flex-wrap gap-x-5 items-center">
+                        <span>Опубликовано:
+                            <span class="font-bold">24 июля 2023</span>
+                        </span>
+                        <span>Обновлено:
+                            <span class="font-bold">25 апреля 2024</span>
+                        </span>
+                    </div>
+                    {% include "./metadata.njk" %}
                 </div>
             </div>
         </div>

@@ -13,6 +13,6 @@
     }
     &__subtitle {
         @apply font-primary font-normal;
-        font-size: getMinMax(14px, 14px);
+        font-size: getMinMax(12px, 14px);
     }
 }
